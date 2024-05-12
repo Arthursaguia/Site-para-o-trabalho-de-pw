@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Envie sua Mensagem</title>
+<link rel="stylesheet" type="text/css" href="mensagem.css">
+</head>
+<body>
+
+<div class="header" style="background-color: #f5dfca;">
+    <h1>Envie sua Mensagem</h1>
+</div>
+
+<div class="container" id="formContainer">
+    <form id="messageForm" action="Home  com carousell.html" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome..">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email..">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem.." style="height:200px"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+<div class="container" id="obrigadoContainer" style="display: none;">
+    <h2>Obrigado!</h2>
+    <button onclick="voltarParaHome()">Voltar para Home</button>
+</div>
+
+<script src="envie.js" defer></script>
+
+</body>
+</html>
